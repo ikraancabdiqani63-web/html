@@ -1,0 +1,10 @@
+.vscode/
+.vscode-server/
+node_modules/
+*.log
+*.tmp
+*.exe
+*.bin
+*.zip
+*.tar
+*.gz
