@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html laid="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+</head>
+<body>
+    <p>this pic is so beautiful</p>
+        <img src="r.jpg" alt="" width="200" height="150">
+</body>
+</html
