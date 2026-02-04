@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <form action="/submit_form" method="post">
+      <fieldset>
+        <legend>Registration Form</legend>
+        <label for email or phone="contact">Email or Phone:</label>
+        <input type="text" id="contact" name="contact" required /><br /><br />
+        <label for="fstname">First Name:</label>
+        <input type="text" id="fstname" name="fstname" required /><br /><br />
+        <label for="lstname">Last Name:</label>
+        <input type="text" id="lstname" name="lstname" required /><br /><br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br /><br />
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option></select
+        ><br /><br />
+        <label for name="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+        <label for="confirm_password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          required
+        /><br /><br />
+        <input type="submit" value="Login" />
+      </fieldset>
+      <h2>Already have an account?</h2>
+      <input type="submit" value="Sign In" />
+      <h2>Forgot Password?</h2>
+      <input type="submit" value="Reset Password" />
+    </form>
+    <br /><br />
+    <form>
+      <fieldset>
+        <legend>Who won the 2020 World Cup?</legend>
+        <input type="radio" id="argentina" name="quiz" value="argentina" />
+        <label for="argentina">Argentina</label><br />
+        <input type="radio" id="france" name="quiz" value="france" />
+        <label for="france">France</label><br />
+        <input type="radio" id="brazil" name="quiz" value="brazil" />
+        <label for="brazil">Brazil</label><br />
+        <input type="radio" id="germany" name="quiz" value="germany" />
+        <label for="germany">Germany</label><br /><br />
+        <input type="submit" value="Submit Answer" />
+      </fieldset>
+    </form>
+  </body>
+</html>
