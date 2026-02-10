@@ -6,17 +6,18 @@
     <title>Form</title>
   </head>
   <body>
-    <h1>HTML Forms</h1>
-
+    
     <form action="/submit_form" method="post">
       <fieldset>
-        <legend>Registration Form</legend>
-        <label for email or phone="contact">Email or Phone:</label>
-        <input type="text" id="contact" name="contact" required /><br /><br />
+        <legend> <h1>Registration Form</h1></legend>
         <label for="fstname">First Name:</label>
-        <input type="text" id="fstname" name="fstname" required /><br /><br />
+        <input type="text" id="fstname" name="fstname" required  placeholder="enter your first name"/><br /><br />
         <label for="lstname">Last Name: </label>
         <input type="text" id="lstname" name="lstname" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="phone">Phone Number:</label>
+        <input type="tel"/><br /><br />
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob" required /><br /><br />
         <label for="gender">Gender:</label>
@@ -34,31 +35,25 @@
           id="password"
           name="password"
           required
-        /><br /><br />
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters" />
+        <br /><br />
         <label for="confirm_password">Confirm Password:</label>
         <input
           type="password"
           id="confirm_password"
           name="confirm_password"
-          required
-        /><br /><br />
+          required />
+          <br /><br />
+        <label for="profile_picture">Profile Picture:</label>
+        <input type="file"/>
+        <br /><br />
+        <p>By signing up, you agree to our terms and conditions.</p>
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">I agree to the terms and conditions</label><br /><br />
         <input type="submit" value="Sign Up" />
-      </fieldset>      
-    </form>
-    <br /><br />
-    <form>
-      <fieldset>
-        <legend>Who won the 2022 World Cup?</legend>
-        <input type="radio" id="argentina" name="quiz" value="argentina" />
-        <label for="argentina">Argentina</label><br />
-        <input type="radio" id="france" name="quiz" value="france" />
-        <label for="france">France</label><br />
-        <input type="radio" id="brazil" name="quiz" value="brazil" />
-        <label for="brazil">Brazil</label><br />
-        <input type="radio" id="germany" name="quiz" value="germany" />
-        <label for="germany">Germany</label><br /><br />
-        <input type="submit" value="Submit Answer" />
-      </fieldset>
+
+      </fieldset>    
     </form>
     <a href="f.html">Login</a>
 

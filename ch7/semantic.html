@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic</title>
+</head>
+<body>
+    <header>
+        <h1>Semantic HTML</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Home</h2>
+            <p>Welcome to our website! This is the home section.</p>
+        </section>
+        <section id="section2">
+            <h2>About</h2>
+            <p>This section provides information about our company and its mission.</p>
+        </section>
+        <section id="section3">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to us through the contact form below.</p>
+            <form action="/submit_contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+        <article>
+            <h2>Latest News</h2>
+            <p>Stay updated with the latest news and announcements from our company.</p>
+        </article>
+        <aside>
+            <h2>Related posts</h2>
+            <ul>
+                <li><a href="https://www.example.com">Home</a></li>
+                <li><a href="https://www.example.com">css</a></li>
+                <li><a href="https://www.example.com">c++</a></li>
+            </ul>
+        
+        </aside>
+    <figure>
+        <img src="bg.jpg" alt="" width="500" height="300">
+        <figcaption>This is a caption describing the image.</figcaption>
+    </figure>
+    </main>
+    <footer>
+        <p> 2024 Semantic HTML. All rights reserved.</p>
+    </footer>
+</body>
+</html>
